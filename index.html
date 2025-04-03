@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuyo RC - Hobby RC y Tienda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Cuyo<span>RC</span></h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="#featured-events">Eventos</a></li>
+                    <li><a href="pages/pistas.html">Pistas</a></li>
+                    <li><a href="#featured-products">Tienda</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <a href="#featured-products" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Tu Hobby en un Clik [Cuyo RC]</h2>
+                <div class="hero-buttons">
+                    <a href="#featured-events" class="btn btn-primary">Próximos Eventos</a>
+                    <a href="#featured-products" class="btn btn-secondary">Visitar Tienda</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Eventos Destacados -->
+    <section id="featured-events" class="featured-events section">
+        <div class="container">
+            <h2 class="section-title">Próximos Eventos</h2>
+            <div class="centered-grid single-column">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="img/1000083793.jpg" alt="Carrera Regional">
+                        <div class="event-date">
+                            <span class="day">27</span>
+                            <span class="month">Abr</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Primera Fecha Off-Road</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Circuito Metropolitano</p>
+                        <p class="event-desc">Competencia oficial de autos RC escala 1/10 en todas las categorías.</p>
+                        <a href="#featured-events" class="btn btn-outline btn-sm">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <div class="status-indicator">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Eventos actualizados al 03/04/2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Pistas -->
+    <section class="tracks section">
+        <div class="container">
+            <h2 class="section-title">Pistas MDZ</h2>
+            <div class="centered-grid">
+                <div class="track-card">
+                    <div class="track-image">
+                        <img src="img/1000083789.jpg" alt="Pista El Challao">
+                    </div>
+                    <div class="track-info">
+                        <h3>RC Metropolitano Track</h3>
+                        <p class="track-location">Mendoza, Argentina</p>
+                        <p class="event-desc">Pista profesional con superficie asfaltada para competiciones de RC On-road.</p>
+                        <div class="track-details">
+                            <span class="track-status"><i class="fas fa-check-circle"></i> Habilitada</span>
+                            <span class="track-type"><i class="fas fa-car"></i> On-road</span>
+                        </div>
+                        <a href="https://www.google.com/maps?sca_esv=a413dd12ff7c5a78&hl=es-419&sxsrf=AHTn8zrYKi85v_-9jcrvho7SVyxABe09vQ:1743718350984&iflsig=ACkRmUkAAAAAZ-8V3se7D0HI9eIEBvzvivKG2g2jfU8d&uact=5&gs_lp=Egdnd3Mtd2l6IhZyYyBtZXRyb3BvbGl0YW5vIHRyYWNrMgYQABgWGB4yBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUjPJVAAWL0kcAB4AJABAJgBiwGgAcgTqgEEMC4yMrgBA8gBAPgBAZgCFqACmBTCAhAQLhiABBjHARgnGIoFGK8BwgIEECMYJ8ICChAjGIAEGCcYigXCAgsQLhiABBixAxiDAcICCxAAGIAEGLEDGIMBwgIFEAAYgATCAggQLhiABBixA8ICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAg0QABiABBixAxhDGIoFwgITEC4YgAQYsQMY0QMYQxjHARiKBcICERAuGIAEGLEDGNEDGIMBGMcBwgILEC4YgAQYxwEYrwHCAg0QLhiABBixAxhDGIoFwgIKEAAYgAQYQxiKBcICDhAuGIAEGMcBGMsBGK8BwgIIEAAYgAQYywHCAggQABgWGAoYHsICCBAAGIAEGKIEwgIIEAAYogQYiQWYAwCSBwQwLjIyoAfJqwGyBwQwLjIyuAeYFA&um=1&ie=UTF-8&fb=1&gl=ar&sa=X&geocode=KT3EhnpNC36WMX4uGo2IAEGi&daddr=Maip%C3%BA,+Mendoza" target="_blank" class="btn btn-outline btn-sm maps-link"><i class="fas fa-map-marker-alt"></i> Ir allá</a>
+                    </div>
+                </div>
+                <div class="track-card">
+                    <div class="track-image">
+                        <img src="img/1000083791.jpg" alt="Pista Las Heras">
+                    </div>
+                    <div class="track-info">
+                        <h3>RC Metropolitano Track</h3>
+                        <p class="track-location">Mendoza, Argentina</p>
+                        <p class="event-desc">Circuito todo terreno con saltos y obstáculos para vehículos RC Off-road.</p>
+                        <div class="track-details">
+                            <span class="track-status"><i class="fas fa-check-circle"></i> Habilitada</span>
+                            <span class="track-type"><i class="fas fa-truck-monster"></i> Off-road</span>
+                        </div>
+                        <a href="https://www.google.com/maps?sca_esv=a413dd12ff7c5a78&hl=es-419&sxsrf=AHTn8zrYKi85v_-9jcrvho7SVyxABe09vQ:1743718350984&iflsig=ACkRmUkAAAAAZ-8V3se7D0HI9eIEBvzvivKG2g2jfU8d&uact=5&gs_lp=Egdnd3Mtd2l6IhZyYyBtZXRyb3BvbGl0YW5vIHRyYWNrMgYQABgWGB4yBRAAGO8FMgUQABjvBTIFEAAY7wUyBRAAGO8FMgUQABjvBUjPJVAAWL0kcAB4AJABAJgBiwGgAcgTqgEEMC4yMrgBA8gBAPgBAZgCFqACmBTCAhAQLhiABBjHARgnGIoFGK8BwgIEECMYJ8ICChAjGIAEGCcYigXCAgsQLhiABBixAxiDAcICCxAAGIAEGLEDGIMBwgIFEAAYgATCAggQLhiABBixA8ICFhAuGIAEGLEDGNEDGEMYgwEYxwEYigXCAg0QABiABBixAxhDGIoFwgITEC4YgAQYsQMY0QMYQxjHARiKBcICERAuGIAEGLEDGNEDGIMBGMcBwgILEC4YgAQYxwEYrwHCAg0QLhiABBixAxhDGIoFwgIKEAAYgAQYQxiKBcICDhAuGIAEGMcBGMsBGK8BwgIIEAAYgAQYywHCAggQABgWGAoYHsICCBAAGIAEGKIEwgIIEAAYogQYiQWYAwCSBwQwLjIyoAfJqwGyBwQwLjIyuAeYFA&um=1&ie=UTF-8&fb=1&gl=ar&sa=X&geocode=KT3EhnpNC36WMX4uGo2IAEGi&daddr=Maip%C3%BA,+Mendoza" target="_blank" class="btn btn-outline btn-sm maps-link"><i class="fas fa-map-marker-alt"></i> Ir allá</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-footer">
+                <div class="status-indicator">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Pistas actualizadas al 03/04/2025</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos Destacados -->
+    <section id="featured-products" class="featured-products section">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="coming-soon-container">
+                <div class="coming-soon-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h3 class="coming-soon-title">Próximamente</h3>
+                <p class="coming-soon-text">Estamos trabajando en nuestra tienda online. ¡Muy pronto podrás adquirir los mejores productos RC!</p>
+                <div class="coming-soon-info">
+                    <p><i class="fas fa-tools"></i> Catálogo en construcción</p>
+                    <p><i class="fas fa-calendar-alt"></i> Apertura estimada: Mayo 2025</p>
+                </div>
+            </div>
+            <div class="section-footer">
+                <div class="status-indicator development">
+                    <i class="fas fa-clock"></i>
+                    <span>Tienda en desarrollo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Categorías -->
+    <section class="categories section">
+        <div class="container">
+            <h2 class="section-title">Categorías populares</h2>
+            <p class="section-subtitle">Estas serán las categorías disponibles cuando nuestra tienda esté en funcionamiento</p>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Autos RC</h3>
+                    <p>Escalas 1/10, 1/8 y mini</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Repuestos</h3>
+                    <p>Piezas originales y alternativas</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3>Baterías</h3>
+                    <p>LiPo, NiMH y más</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Electrónica</h3>
+                    <p>ESC, servos y receptores</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>¡Mantente al día con Cuyo RC!</h2>
+                    <p>Suscríbete para recibir información sobre eventos, novedades y ofertas exclusivas.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h2>Cuyo<span>RC</span></h2>
+                    </div>
+                    <p>Tu tienda y comunidad de Radio Control en la región de Cuyo, Argentina. Dedicados a promover el hobby y ofrecer los mejores productos y eventos para entusiastas del RC.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/5492616921221" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Navegación</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#featured-events">Eventos</a></li>
+                        <li><a href="pages/pistas.html">Pistas</a></li>
+                        <li><a href="#featured-products">Tienda</a></li>
+                        <li><a href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categorías</h3>
+                    <ul class="footer-links">
+                        <li><a href="#featured-products">Autos RC</a></li>
+                        <li><a href="#featured-products">Repuestos</a></li>
+                        <li><a href="#featured-products">Baterías</a></li>
+                        <li><a href="#featured-products">Electrónica</a></li>
+                        <li><a href="#featured-products">Accesorios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Godoy Cruz, Mendoza</li>
+                        <li><i class="fas fa-phone"></i> +5492616921221</li>
+                        <li><i class="fas fa-envelope"></i> info@cuyorc.com.ar</li>
+                        <li><i class="fas fa-clock"></i> Lun-Vie: 9:00-18:00, Sáb: 9:00-13:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Cuyo RC. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+                <p class="designer-credits">Diseño e impulsado por Ignacio Enrique Arra</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html> 

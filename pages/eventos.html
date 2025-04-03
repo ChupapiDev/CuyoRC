@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos - Cuyo RC</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/notifications.css">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <h1>Cuyo<span>RC</span></h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="eventos.html" class="active">Eventos</a></li>
+                    <li><a href="pistas.html">Pistas</a></li>
+                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <a href="carrito.html" class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner de página -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Eventos RC</h1>
+            <p>Descubre los próximos eventos RC en la región de Cuyo</p>
+        </div>
+    </section>
+
+    <!-- Sección de filtros -->
+    <section class="filters section">
+        <div class="container">
+            <div class="events-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="carreras">Carreras</button>
+                <button class="filter-btn" data-filter="exhibiciones">Exhibiciones</button>
+                <button class="filter-btn" data-filter="talleres">Talleres</button>
+                <button class="filter-btn" data-filter="drone">Drone</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de eventos -->
+    <section class="events-list section">
+        <div class="container">
+            <div class="events-grid">
+                <div class="event-card" data-category="carreras">
+                    <div class="event-image">
+                        <img src="../img/event-1.jpg" alt="Carrera Regional">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">Dic</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Carrera Regional Mendoza</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Circuito El Challao, Mendoza</p>
+                        <p class="event-desc">Competencia oficial de autos RC escala 1/10 en todas las categorías.</p>
+                        <div class="event-details">
+                            <div class="event-time"><i class="far fa-clock"></i> 09:00 - 18:00</div>
+                            <div class="event-organizer"><i class="fas fa-user"></i> Club RC Mendoza</div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Inscribirse</a>
+                    </div>
+                </div>
+                
+                <div class="event-card" data-category="drone">
+                    <div class="event-image">
+                        <img src="../img/event-2.jpg" alt="Encuentro de Drones">
+                        <div class="event-date">
+                            <span class="day">22</span>
+                            <span class="month">Dic</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Encuentro de Drones FPV</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Parque Central, San Juan</p>
+                        <p class="event-desc">Exhibición y competencia de vuelo de drones con obstáculos.</p>
+                        <div class="event-details">
+                            <div class="event-time"><i class="far fa-clock"></i> 14:00 - 19:00</div>
+                            <div class="event-organizer"><i class="fas fa-user"></i> Cuyo Drones</div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Inscribirse</a>
+                    </div>
+                </div>
+                
+                <div class="event-card" data-category="talleres">
+                    <div class="event-image">
+                        <img src="../img/event-3.jpg" alt="Taller RC">
+                        <div class="event-date">
+                            <span class="day">29</span>
+                            <span class="month">Dic</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Taller de Iniciación RC</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Club RC, San Luis</p>
+                        <p class="event-desc">Aprende los fundamentos del hobby con expertos del mundo RC.</p>
+                        <div class="event-details">
+                            <div class="event-time"><i class="far fa-clock"></i> 16:00 - 19:00</div>
+                            <div class="event-organizer"><i class="fas fa-user"></i> RC San Luis</div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Inscribirse</a>
+                    </div>
+                </div>
+                
+                <div class="event-card" data-category="carreras">
+                    <div class="event-image">
+                        <img src="../img/event-4.jpg" alt="Copa Cuyo">
+                        <div class="event-date">
+                            <span class="day">5</span>
+                            <span class="month">Ene</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Copa Cuyo 2024</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Autódromo Mendoza</p>
+                        <p class="event-desc">Gran premio de autos RC con participantes de toda la región de Cuyo.</p>
+                        <div class="event-details">
+                            <div class="event-time"><i class="far fa-clock"></i> 10:00 - 18:00</div>
+                            <div class="event-organizer"><i class="fas fa-user"></i> Asociación RC Cuyo</div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Inscribirse</a>
+                    </div>
+                </div>
+                
+                <div class="event-card" data-category="exhibiciones">
+                    <div class="event-image">
+                        <img src="../img/event-5.jpg" alt="Exhibición RC">
+                        <div class="event-date">
+                            <span class="day">12</span>
+                            <span class="month">Ene</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Exhibición RC en Shopping</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Palmares Shopping, Mendoza</p>
+                        <p class="event-desc">Muestra de diferentes tipos de vehículos RC para todo público.</p>
+                        <div class="event-details">
+                            <div class="event-time"><i class="far fa-clock"></i> 15:00 - 21:00</div>
+                            <div class="event-organizer"><i class="fas fa-user"></i> Cuyo RC</div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+                
+                <div class="event-card" data-category="talleres">
+                    <div class="event-image">
+                        <img src="../img/event-6.jpg" alt="Taller Técnico">
+                        <div class="event-date">
+                            <span class="day">19</span>
+                            <span class="month">Ene</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Taller de Reparación RC</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> Tienda Cuyo RC, Mendoza</p>
+                        <p class="event-desc">Aprende a reparar y mantener tus vehículos RC como un profesional.</p>
+                        <div class="event-details">
+                            <div class="event-time"><i class="far fa-clock"></i> 17:00 - 20:00</div>
+                            <div class="event-organizer"><i class="fas fa-user"></i> Técnicos Cuyo RC</div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Inscribirse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección calendario mensual -->
+    <section class="calendar-section section">
+        <div class="container">
+            <h2 class="section-title">Calendario de Eventos</h2>
+            <div class="calendar-wrapper">
+                <div class="calendar-header">
+                    <button class="calendar-nav prev"><i class="fas fa-chevron-left"></i></button>
+                    <h3 class="calendar-title">Diciembre 2023</h3>
+                    <button class="calendar-nav next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="calendar">
+                    <div class="calendar-days">
+                        <div class="day-name">Dom</div>
+                        <div class="day-name">Lun</div>
+                        <div class="day-name">Mar</div>
+                        <div class="day-name">Mié</div>
+                        <div class="day-name">Jue</div>
+                        <div class="day-name">Vie</div>
+                        <div class="day-name">Sáb</div>
+                    </div>
+                    <div class="calendar-dates">
+                        <!-- Días previos del mes anterior -->
+                        <div class="date inactive">26</div>
+                        <div class="date inactive">27</div>
+                        <div class="date inactive">28</div>
+                        <div class="date inactive">29</div>
+                        <div class="date inactive">30</div>
+                        <!-- Días del mes actual -->
+                        <div class="date">1</div>
+                        <div class="date">2</div>
+                        <div class="date">3</div>
+                        <div class="date">4</div>
+                        <div class="date">5</div>
+                        <div class="date">6</div>
+                        <div class="date">7</div>
+                        <div class="date">8</div>
+                        <div class="date">9</div>
+                        <div class="date">10</div>
+                        <div class="date">11</div>
+                        <div class="date">12</div>
+                        <div class="date">13</div>
+                        <div class="date">14</div>
+                        <div class="date has-event" data-tooltip="Carrera Regional Mendoza">15</div>
+                        <div class="date">16</div>
+                        <div class="date">17</div>
+                        <div class="date">18</div>
+                        <div class="date">19</div>
+                        <div class="date">20</div>
+                        <div class="date">21</div>
+                        <div class="date has-event" data-tooltip="Encuentro de Drones FPV">22</div>
+                        <div class="date">23</div>
+                        <div class="date">24</div>
+                        <div class="date">25</div>
+                        <div class="date">26</div>
+                        <div class="date">27</div>
+                        <div class="date">28</div>
+                        <div class="date has-event" data-tooltip="Taller de Iniciación RC">29</div>
+                        <div class="date">30</div>
+                        <div class="date">31</div>
+                        <!-- Días siguientes del próximo mes -->
+                        <div class="date inactive">1</div>
+                        <div class="date inactive">2</div>
+                        <div class="date inactive">3</div>
+                        <div class="date inactive">4</div>
+                        <div class="date inactive has-event" data-tooltip="Copa Cuyo 2024">5</div>
+                        <div class="date inactive">6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>¡No te pierdas ningún evento!</h2>
+                    <p>Suscríbete para recibir notificaciones sobre nuevos eventos en tu correo electrónico.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h2>Cuyo<span>RC</span></h2>
+                    </div>
+                    <p>Tu tienda y comunidad de Radio Control en la región de Cuyo, Argentina. Dedicados a promover el hobby y ofrecer los mejores productos y eventos para entusiastas del RC.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Navegación</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="pistas.html">Pistas</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categorías</h3>
+                    <ul class="footer-links">
+                        <li><a href="tienda.html?categoria=autos">Autos RC</a></li>
+                        <li><a href="tienda.html?categoria=repuestos">Repuestos</a></li>
+                        <li><a href="tienda.html?categoria=baterias">Baterías</a></li>
+                        <li><a href="tienda.html?categoria=electronica">Electrónica</a></li>
+                        <li><a href="tienda.html?categoria=accesorios">Accesorios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> Av. San Martín 1234, Mendoza</li>
+                        <li><i class="fas fa-phone"></i> +54 261 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@cuyorc.com.ar</li>
+                        <li><i class="fas fa-clock"></i> Lun-Vie: 9:00-18:00, Sáb: 9:00-13:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Cuyo RC. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Términos y Condiciones</a>
+                    <a href="#">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script>
+        // Script para filtrar eventos
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const eventCards = document.querySelectorAll('.event-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remover clase active de todos los botones
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Agregar clase active al botón clickeado
+                    btn.classList.add('active');
+                    
+                    const filter = btn.getAttribute('data-filter');
+                    
+                    // Filtrar eventos
+                    eventCards.forEach(card => {
+                        if (filter === 'all') {
+                            card.style.display = 'block';
+                        } else {
+                            if (card.getAttribute('data-category') === filter) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
